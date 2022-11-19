@@ -1,0 +1,75 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box ;
+}
+
+.wrapper{
+    max-width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+
+
+}
+
+
+.banner-container{
+    background-color: white;
+    
+    
+}
+.banner {
+  
+    padding-left: 50px;
+    
+
+   
+}
+.banner-container .banner img{
+    width: 200px;
+    height: 150px;
+    margin: 20px;
+   
+    /* height: fit-content; */
+    transition: all 0.4s linear;
+    animation: bounceAnimation 3s linear 1 alternate;
+    
+}
+
+.banner img{
+    width: 200px;
+   
+    
+   
+
+}
+
+
+
+.banner .one:hover,.two:hover,.three:hover,.four:hover,.five:hover,.six:hover,.seven:hover,.eight:hover{
+   transform: scale(1.05) rotateZ(2deg);
+
+}
+
+@keyframes bounceAnimation {
+    0%{
+        transform: scale(0.5);
+    }
+    100%{
+        transform: scale(1.1);
+    }
+
+    
+}
+@media screen and (min-width: 990px){
+    .banner {
+  
+        padding-left: 10px;
+        
+    
+       
+    }
+
+}

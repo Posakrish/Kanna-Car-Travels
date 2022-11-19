@@ -1,0 +1,161 @@
+.wrapper{
+    max-width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+
+
+}
+
+
+.course-top{
+    width: 100%;
+    /* height: 200px; */
+    background-color: rgba(173, 216, 230, 0.483);
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    grid-template-rows: 1fr;
+    padding-bottom:  50px;
+    padding-top: 50px;
+ 
+}
+
+
+.single-course{
+    width:100%;
+    background-color: white;
+    height: 100%;
+    box-shadow: 10px;
+    border-radius: 10px;
+    transition: all 0.4s linear;
+ 
+    padding: 10px;
+    
+
+}
+
+.heading h1{
+    background-color: rgba(211, 211, 211, 0.596);
+    text-align: center;
+    color: rgba(0, 0, 0, 0.873);
+    /* display: flex;
+    justify-content: center; */
+    letter-spacing: 1px;
+    /* word-spacing: 5px; */
+    font-weight: bold;
+    font-style: normal;
+
+}
+.heading h2{
+    color: rgb(68, 65, 65);
+    letter-spacing: 1px;
+    padding-bottom: 20px;
+
+}
+
+.single-course:hover{
+    transform: translateY(-2px) scale(1.002);
+   
+    box-shadow: 20px rgba(0,0,0,0.15);
+
+
+}
+.single-course .img-container{
+    aspect-ratio: 355/250;
+    overflow: hidden;
+}
+.single-course .img-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: all 0.4s linear;
+    animation: bounceAnimation 3s linear 1 alternate;
+
+}
+@keyframes bounceAnimation {
+    0%{
+        transform: scale(0.5);
+    }
+    100%{
+        transform: scale(1.1);
+    }
+
+    
+}
+
+.content-table{
+
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size:0.9em;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+}
+.content-table thead tr {
+   
+    background-color: rgba(173, 216, 230, 0.901);
+    color:white;
+    text-align: left;
+    font-weight: bold;
+
+}
+.content-table th,.content-table td{
+    padding: 8px 10px;
+
+}
+
+.content-table tbody tr {
+    border-bottom: 1px solid grey;
+}
+
+.content-table tbody tr:nth-of-type(even){
+    background-color: lightgrey;
+}
+.content-table tbody tr:last-of-type {
+    border-bottom:2px solid black;
+}
+
+@media screen and (min-width: 992px){
+    .featured-course-container{
+        padding: 50px 100px;
+    
+    }
+
+    .single-course .img-container{
+        aspect-ratio: 396/300;
+
+    }
+    .single-course:hover img {
+        transform: scale(1.05) rotateZ(2deg);
+
+    }
+
+    
+}
+
+.column-layout{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+
+}
+@media screen and (min-width:769px) {
+    .column-layout{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+}
+@media screen and (min-width:992px) {
+    .column-layout{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    
+}
+
