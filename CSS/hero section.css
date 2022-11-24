@@ -64,7 +64,7 @@
 }
 
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 100px) {
     .page-hero-container {
         position: relative;
         
@@ -100,10 +100,11 @@
         left:50%;
         transform: translate(-50%, -50%);
         background:transparent;
+        
     }
     .page-hero-container .heading {
-        color: white;
-        font-size: 54px;
+        color: #1dead2;
+        font-size: 20px;
         font-weight: bold;
         letter-spacing: 1px;
         text-transform: capitalize;
@@ -113,8 +114,8 @@
     
     }
     .page-hero-container .small-heading{
-        color: white;
-        font-size: 16px;
+        color:whitesmoke;
+        font-size: 10px;
         font-weight: bold;
         letter-spacing: 1px;
         /* text-align: center; */
@@ -134,6 +135,29 @@
     
 }
 
+@media screen and (min-width: 992px) {
+
+    .page-hero-container .heading {
+        color: #1dead2;
+        font-size: 50px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        text-transform: capitalize;
+        
+    
+
+    
+    }
+    .page-hero-container .small-heading{
+        color:whitesmoke;
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        /* text-align: center; */
+    }
+
+}    
+
 @keyframes bounceaaAnimation {
 
     0% {
@@ -147,5 +171,6 @@
     }
     
 }
+
 
   

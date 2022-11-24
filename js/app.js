@@ -9,9 +9,9 @@ const openSidebar = () => {
 };
 
 const closeSidebar = () => {
-    console.log(sidebarContainer.classList);
+    // console.log(sidebarContainer.classList);
     sidebarContainer.classList.remove("show-sidebar")
-    console.log(sidebarContainer.classList);
+    // console.log(sidebarContainer.classList);
 };
 
 hamburger.addEventListener("click", openSidebar);
