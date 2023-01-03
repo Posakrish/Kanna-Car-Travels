@@ -11,8 +11,8 @@
     padding-top: 50px;
  
 }
-.package-top .h1{
-    background-color: aqua;
+.package-section h1{
+    background-color: rgba(173, 216, 230, 0.901);
 }
 
 *{
